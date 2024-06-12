@@ -7,6 +7,7 @@ TagManager:
   - Pipe
   - upPipe
   - downPipe
+  - Score Area
   layers:
   - Default
   - TransparentFX
