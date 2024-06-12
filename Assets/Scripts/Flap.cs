@@ -29,7 +29,7 @@ public class Flap : MonoBehaviour
         {
             rb.velocity = new Vector2(0f, 10f);
             bird.transform.Rotate(0, 0, 50);
-            audioSource.PlayOneShot(flap);
+            // audioSource.PlayOneShot(flap);
         }
 
         if (rb.velocity.y < -15)
