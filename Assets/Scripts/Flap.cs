@@ -12,6 +12,7 @@ public class Flap : MonoBehaviour
     [SerializeField] private TMP_Text scoreText;
     public AudioSource audioSource;
     public AudioClip scoreIncrease;
+    public AudioClip flap;
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +28,7 @@ public class Flap : MonoBehaviour
         if (Input.GetKey(KeyCode.Space))
         {
             rb.velocity = new Vector2(0f, 10f);
+            audioSource.PlayOneShot(flap);
         }
     }
 
