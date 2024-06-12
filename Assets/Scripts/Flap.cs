@@ -10,12 +10,15 @@ public class Flap : MonoBehaviour
     Rigidbody2D rb;
     private int score = 0;
     [SerializeField] private TMP_Text scoreText;
+    public AudioSource audioSource;
+    public AudioClip scoreIncrease;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         rb.constraints = RigidbodyConstraints2D.FreezePositionX;
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -33,6 +36,7 @@ public class Flap : MonoBehaviour
         {
             score++;
             scoreText.SetText(score.ToString());
+            audioSource.PlayOneShot(scoreIncrease);
         }
     }
 }

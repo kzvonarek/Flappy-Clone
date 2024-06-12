@@ -6,12 +6,8 @@ using UnityEngine.UIElements;
 
 public class floorBehavior : MonoBehaviour
 {
-    void Update()
+    void OnCollisionEnter2D(Collision2D collision)
     {
-        gameObject.transform.position = transform.position + new Vector3(-0.01f, 0, 0);
+        SceneManager.LoadScene("Main Scene");
     }
-    // void OnCollisionEnter2D(Collision2D collision)
-    // {
-    //     SceneManager.LoadScene("Main Scene");
-    // }
 }

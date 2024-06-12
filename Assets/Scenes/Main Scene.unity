@@ -1471,22 +1471,6 @@ PrefabInstance:
       propertyPath: scoreText
       value: 
       objectReference: {fileID: 1630681192}
-    - target: {fileID: 5439247373844658319, guid: eb2fb597426a84ac98ceb5ec11d3114e, type: 3}
-      propertyPath: pointsText
-      value: 
-      objectReference: {fileID: 1630681192}
-    - target: {fileID: 5696958094521570040, guid: eb2fb597426a84ac98ceb5ec11d3114e, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 3.9084826
-      objectReference: {fileID: 0}
-    - target: {fileID: 5696958094521570040, guid: eb2fb597426a84ac98ceb5ec11d3114e, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 3.9084826
-      objectReference: {fileID: 0}
-    - target: {fileID: 5696958094521570040, guid: eb2fb597426a84ac98ceb5ec11d3114e, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 3.9084826
-      objectReference: {fileID: 0}
     - target: {fileID: 5696958094521570040, guid: eb2fb597426a84ac98ceb5ec11d3114e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -8.43
