@@ -18,11 +18,6 @@ public class movePipe : MonoBehaviour
     void OnCollisionEnter2D(Collision2D collision)
     {
         audioSource.PlayOneShot(death);
-        int i = 0;
-        while (i < 3)
-        {
-            i++;
-        }
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
