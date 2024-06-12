@@ -226,7 +226,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 389acfb050b6140ba94f44d054f91ace, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pipe: {fileID: 2132888554}
 --- !u!61 &203058537
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -751,7 +750,7 @@ GameObject:
   - component: {fileID: 780930881}
   m_Layer: 0
   m_Name: Floor
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1455,11 +1454,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53e5050820c2c479aa265562d2d7e624, type: 3}
---- !u!1 &2132888554 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8115150972438173205, guid: 53e5050820c2c479aa265562d2d7e624, type: 3}
-  m_PrefabInstance: {fileID: 1020941122}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2132888555 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7489159721863208996, guid: 53e5050820c2c479aa265562d2d7e624, type: 3}

@@ -5,9 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Pipe
-  - upPipe
-  - downPipe
   - Score Area
+  - Floor
   layers:
   - Default
   - TransparentFX

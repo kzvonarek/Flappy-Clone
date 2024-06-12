@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class resetPipe : MonoBehaviour
 {
-    public GameObject pipe;
-
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Pipe"))

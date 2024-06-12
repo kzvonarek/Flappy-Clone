@@ -10,8 +10,8 @@ public class floorBehavior : MonoBehaviour
     {
         gameObject.transform.position = transform.position + new Vector3(-0.01f, 0, 0);
     }
-    void OnCollisionEnter2D(Collision2D collision)
-    {
-        SceneManager.LoadScene("Main Scene");
-    }
+    // void OnCollisionEnter2D(Collision2D collision)
+    // {
+    //     SceneManager.LoadScene("Main Scene");
+    // }
 }
