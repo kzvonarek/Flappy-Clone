@@ -9,7 +9,7 @@ public class movePipe : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Time.deltaTime * -5, 0, 0);
+        transform.Translate(Time.deltaTime * -4, 0, 0);
     }
 
     void OnCollisionEnter2D(Collision2D collision)
