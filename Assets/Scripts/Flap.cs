@@ -8,6 +8,7 @@ using UnityEngine.UIElements;
 public class Flap : MonoBehaviour
 {
     Rigidbody2D rb;
+    public GameObject bird;
     private int score = 0;
     [SerializeField] private TMP_Text scoreText;
     public AudioSource audioSource;
@@ -18,7 +19,6 @@ public class Flap : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        rb.constraints = RigidbodyConstraints2D.FreezePositionX;
         audioSource = GetComponent<AudioSource>();
     }
 
@@ -28,7 +28,13 @@ public class Flap : MonoBehaviour
         if (Input.GetKey(KeyCode.Space))
         {
             rb.velocity = new Vector2(0f, 10f);
+            bird.transform.Rotate(0, 0, 50);
             audioSource.PlayOneShot(flap);
+        }
+
+        if (rb.velocity.y < -15)
+        {
+            bird.transform.Rotate(0, 0, -50);
         }
     }
 
