@@ -28,14 +28,14 @@ public class Flap : MonoBehaviour
         if (Input.GetKey(KeyCode.Space))
         {
             rb.velocity = new Vector2(0f, 10f);
-            bird.transform.Rotate(0, 0, 50);
+            // bird.transform.Rotate(0, 0, 50);
             // audioSource.PlayOneShot(flap);
         }
 
-        if (rb.velocity.y < -15)
-        {
-            bird.transform.Rotate(0, 0, -50);
-        }
+        // if (rb.velocity.y < -15)
+        // {
+        //     bird.transform.Rotate(0, 0, -50);
+        // }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
