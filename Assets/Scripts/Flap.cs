@@ -4,6 +4,8 @@ using UnityEditor.Callbacks;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UIElements;
+using Unity.VisualScripting;
+using UnityEngine.SceneManagement;
 
 public class Flap : MonoBehaviour
 {
@@ -30,6 +32,11 @@ public class Flap : MonoBehaviour
             rb.velocity = new Vector2(0f, 10f);
             // bird.transform.Rotate(0, 0, 50);
             // audioSource.PlayOneShot(flap);
+        }
+
+        if (Input.GetKey(KeyCode.M))
+        {
+            SceneManager.LoadScene("Main Menu");
         }
 
         // if (rb.velocity.y < -15)
