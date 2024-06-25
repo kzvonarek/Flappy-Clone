@@ -16,10 +16,12 @@ public class Flap : MonoBehaviour
     public AudioSource audioSource;
     public AudioClip scoreIncrease;
     public AudioClip flap;
+    private Animator birdAnimator;
 
     // Start is called before the first frame update
     void Start()
     {
+        birdAnimator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         audioSource = GetComponent<AudioSource>();
     }
@@ -27,12 +29,21 @@ public class Flap : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
         {
             rb.velocity = new Vector2(0f, 10f);
+            birdAnimator.SetTrigger("Flap");
+
             // bird.transform.Rotate(0, 0, 50);
             // audioSource.PlayOneShot(flap);
         }
+        // if (birdAnimator != null)
+        // {
+        //     if (Input.GetKey(KeyCode.Space))
+        //     {
+        //         birdAnimator.SetTrigger("Flap");
+        //     }
+        // }
 
         if (Input.GetKey(KeyCode.M))
         {
