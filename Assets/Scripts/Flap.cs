@@ -20,7 +20,7 @@ public class Flap : MonoBehaviour
     private Animator birdAnimator;
     private bool firstInput = false;
     private bool paused = false;
-
+    
     // Start is called before the first frame update
     void Start()
     {
