@@ -10,7 +10,6 @@ public class movePipe : MonoBehaviour
     public AudioSource audioSource;
     public AudioClip death;
     private bool firstInput = false;
-    public GameObject pipe;
     // Update is called once per frame
 
     void Start()

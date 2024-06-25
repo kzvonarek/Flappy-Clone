@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class StartButton : MonoBehaviour
+public class UImanager : MonoBehaviour
 {
     public Button startButton;
     void Start()

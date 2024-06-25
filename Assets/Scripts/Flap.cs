@@ -42,7 +42,7 @@ public class Flap : MonoBehaviour
             birdAnimator.SetTrigger("Flap");
 
             // bird.transform.Rotate(0, 0, 50);
-            // audioSource.PlayOneShot(flap);
+            audioSource.PlayOneShot(flap);
         }
         // if (birdAnimator != null)
         // {
@@ -51,11 +51,6 @@ public class Flap : MonoBehaviour
         //         birdAnimator.SetTrigger("Flap");
         //     }
         // }
-
-        if (Input.GetKey(KeyCode.M))
-        {
-            SceneManager.LoadScene("Main Menu");
-        }
 
         // if (rb.velocity.y < -15)
         // {

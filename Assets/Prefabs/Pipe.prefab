@@ -265,7 +265,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 4599934378873695799}
-  death: {fileID: 8300000, guid: bd3ebb882b48c4b97be2dd447cf44103, type: 3}
+  death: {fileID: 8300000, guid: 81412cc49d5d94f9b9e83ccaec27f282, type: 3}
+  pipe: {fileID: 8115150972438173205}
 --- !u!61 &4851263679083518141
 BoxCollider2D:
   m_ObjectHideFlags: 0
