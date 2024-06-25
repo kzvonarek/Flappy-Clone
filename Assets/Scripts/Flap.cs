@@ -6,6 +6,7 @@ using TMPro;
 using UnityEngine.UIElements;
 using Unity.VisualScripting;
 using UnityEngine.SceneManagement;
+using System;
 
 public class Flap : MonoBehaviour
 {
@@ -17,6 +18,7 @@ public class Flap : MonoBehaviour
     public AudioClip scoreIncrease;
     public AudioClip flap;
     private Animator birdAnimator;
+    private bool firstInput = false;
 
     // Start is called before the first frame update
     void Start()
@@ -31,6 +33,11 @@ public class Flap : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
         {
+            if (firstInput == false)
+            {
+                rb.constraints = RigidbodyConstraints2D.None;
+                firstInput = true;
+            }
             rb.velocity = new Vector2(0f, 10f);
             birdAnimator.SetTrigger("Flap");
 

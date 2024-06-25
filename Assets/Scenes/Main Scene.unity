@@ -894,7 +894,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &807893908
 Transform:
   m_ObjectHideFlags: 0
@@ -904,7 +904,7 @@ Transform:
   m_GameObject: {fileID: 807893907}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.5304523, y: -0.55834734, z: 0}
+  m_LocalPosition: {x: 5.66, y: -0.55834734, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -933,7 +933,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7489159721863208996, guid: 53e5050820c2c479aa265562d2d7e624, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.13
+      value: 6.6
       objectReference: {fileID: 0}
     - target: {fileID: 7489159721863208996, guid: 53e5050820c2c479aa265562d2d7e624, type: 3}
       propertyPath: m_LocalPosition.z
@@ -985,6 +985,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 807893908}
     m_Modifications:
+    - target: {fileID: 750331591205399382, guid: 53e5050820c2c479aa265562d2d7e624, type: 3}
+      propertyPath: pipe
+      value: 
+      objectReference: {fileID: 8115150972438173205, guid: 53e5050820c2c479aa265562d2d7e624, type: 3}
     - target: {fileID: 7489159721863208996, guid: 53e5050820c2c479aa265562d2d7e624, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3
@@ -1596,8 +1600,12 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2162491897671278214, guid: eb2fb597426a84ac98ceb5ec11d3114e, type: 3}
+      propertyPath: m_Constraints
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2162491897671278214, guid: eb2fb597426a84ac98ceb5ec11d3114e, type: 3}
       propertyPath: m_GravityScale
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5439247373844658319, guid: eb2fb597426a84ac98ceb5ec11d3114e, type: 3}
       propertyPath: scoreText
@@ -1605,7 +1613,7 @@ PrefabInstance:
       objectReference: {fileID: 1630681192}
     - target: {fileID: 5696958094521570040, guid: eb2fb597426a84ac98ceb5ec11d3114e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.48
+      value: -5.09
       objectReference: {fileID: 0}
     - target: {fileID: 5696958094521570040, guid: eb2fb597426a84ac98ceb5ec11d3114e, type: 3}
       propertyPath: m_LocalPosition.y

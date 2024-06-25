@@ -9,10 +9,26 @@ public class movePipe : MonoBehaviour
 {
     public AudioSource audioSource;
     public AudioClip death;
+    private bool firstInput = false;
+    public GameObject pipe;
     // Update is called once per frame
+
+    void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+        transform.Translate(0, Random.Range(-2, 2), 0);
+    }
     void Update()
     {
-        transform.Translate(Time.deltaTime * -4, 0, 0);
+        if (Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
+        {
+            firstInput = true;
+        }
+
+        if (firstInput == true)
+        {
+            transform.Translate(Time.deltaTime * -4, 0, 0);
+        }
     }
 
     void OnCollisionEnter2D(Collision2D collision)
