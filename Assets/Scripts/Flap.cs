@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEditor.Callbacks;
 using UnityEngine;
 using TMPro;
-using UnityEngine.UIElements;
+using UnityEngine.UI;
 using Unity.VisualScripting;
 using UnityEngine.SceneManagement;
 using System;
@@ -19,6 +19,7 @@ public class Flap : MonoBehaviour
     public AudioClip flap;
     private Animator birdAnimator;
     private bool firstInput = false;
+    private bool paused = false;
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +27,8 @@ public class Flap : MonoBehaviour
         birdAnimator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         audioSource = GetComponent<AudioSource>();
+        paused = false;
+        Time.timeScale = 1;
     }
 
     // Update is called once per frame
@@ -42,15 +45,24 @@ public class Flap : MonoBehaviour
             birdAnimator.SetTrigger("Flap");
 
             // bird.transform.Rotate(0, 0, 50);
-            audioSource.PlayOneShot(flap);
+            // audioSource.PlayOneShot(flap);
         }
-        // if (birdAnimator != null)
-        // {
-        //     if (Input.GetKey(KeyCode.Space))
-        //     {
-        //         birdAnimator.SetTrigger("Flap");
-        //     }
-        // }
+
+        if (Input.GetKeyDown(KeyCode.Escape) && paused == false)
+        {
+            paused = true;
+            Time.timeScale = 0;
+        }
+        else if (Input.GetKeyDown(KeyCode.Escape) && paused == true)
+        {
+            paused = false;
+            Time.timeScale = 1;
+        }
+
+        if (Input.GetKey(KeyCode.M))
+        {
+            SceneManager.LoadScene("Main Menu");
+        }
 
         // if (rb.velocity.y < -15)
         // {

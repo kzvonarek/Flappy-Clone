@@ -16,4 +16,9 @@ public class UImanager : MonoBehaviour
     {
         SceneManager.LoadScene("Main Scene");
     }
+
+    void Update()
+    {
+
+    }
 }

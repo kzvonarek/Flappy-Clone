@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 6475878657038991146}
   - component: {fileID: 5439247373844658319}
   - component: {fileID: 1165875807880530895}
-  - component: {fileID: 6021535752812129119}
   - component: {fileID: 4033565161181821600}
   m_Layer: 0
   m_Name: Flappy Bird
@@ -79,7 +78,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c0805365db42e4b8585f593e19e01277, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 70b1ef29a87b14a69a94fd6b3873aa6f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -116,7 +115,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 1
+  m_Constraints: 2
 --- !u!58 &6475878657038991146
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -167,8 +166,8 @@ MonoBehaviour:
   bird: {fileID: 7152037912370614243}
   scoreText: {fileID: 0}
   audioSource: {fileID: 1165875807880530895}
-  scoreIncrease: {fileID: 8300000, guid: 2e0ee68b71cc641a6b4214445f7ec1f9, type: 3}
-  flap: {fileID: 0}
+  scoreIncrease: {fileID: 8300000, guid: ab4a71d9e82594eaabfd160d3872a60f, type: 3}
+  flap: {fileID: 8300000, guid: 6061e99912a4b47a3a24e1e6d924854b, type: 3}
 --- !u!82 &1165875807880530895
 AudioSource:
   m_ObjectHideFlags: 0
@@ -182,7 +181,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
-  m_Pitch: 1
+  m_Pitch: -0.12
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -265,21 +264,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!111 &6021535752812129119
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7152037912370614243}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 533d72d6a1819456d94835536bf5e325, type: 2}
-  m_Animations: []
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!95 &4033565161181821600
 Animator:
   serializedVersion: 5
