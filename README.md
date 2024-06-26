@@ -1,5 +1,5 @@
 # CwappyClone
-"Cwappy Bird" a clone of Flappy Bird, done to learn Unity again.
+"Cwappy Bird" a clone of Flappy Bird by Dong Nguyen, began to learn Unity again.
 
 Done as of 6/25/24. First solo project.
 
