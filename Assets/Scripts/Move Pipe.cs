@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEditor;
+using UnityEditor.Callbacks;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -30,10 +31,15 @@ public class movePipe : MonoBehaviour
         }
     }
 
+    private IEnumerator ThreeSecondDelay()
+    {
+        yield return new WaitForSeconds(1f);
+        // disable bird collisions
+        SceneManager.LoadScene("Main Scene");
+    }
     void OnCollisionEnter2D(Collision2D collision)
     {
         audioSource.PlayOneShot(death);
-        // yield return new WaitForSeconds(2f);
-        SceneManager.LoadScene("Main Scene");
+        StartCoroutine(ThreeSecondDelay());
     }
 }
