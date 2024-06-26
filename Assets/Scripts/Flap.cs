@@ -79,4 +79,7 @@ public class Flap : MonoBehaviour
             audioSource.PlayOneShot(scoreIncrease);
         }
     }
+    public void disableCollisions()
+    {
+    }
 }
