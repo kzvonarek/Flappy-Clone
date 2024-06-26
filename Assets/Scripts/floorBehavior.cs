@@ -11,6 +11,7 @@ public class floorBehavior : MonoBehaviour
     public GameObject bird;
     private Rigidbody2D rb;
     private Collider2D birdBoxC;
+
     void Start()
     {
         birdBoxC = bird.GetComponent<Collider2D>();
