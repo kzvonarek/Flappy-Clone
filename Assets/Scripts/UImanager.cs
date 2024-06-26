@@ -8,17 +8,19 @@ using UnityEngine.UI;
 public class UImanager : MonoBehaviour
 {
     public Button startButton;
+    public Button closeButton;
     void Start()
     {
-        startButton.onClick.AddListener(TaskOnClick);
+        startButton.onClick.AddListener(StartTaskOnClick);
+        closeButton.onClick.AddListener(CloseTaskOnClick);
     }
-    void TaskOnClick()
+    void StartTaskOnClick()
     {
         SceneManager.LoadScene("Main Scene");
     }
 
-    void Update()
+    void CloseTaskOnClick()
     {
-
+        Application.Quit();
     }
 }
