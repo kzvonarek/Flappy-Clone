@@ -651,7 +651,13 @@ PlayerSettings:
   XboxOneOverrideIdentityName: 
   XboxOneOverrideIdentityPublisher: 
   vrEditorSettings: {}
-  cloudServicesEnabled: {}
+  cloudServicesEnabled:
+    Build: 0
+    Game Performance: 0
+    Legacy Analytics: 0
+    Purchasing: 0
+    UDP: 0
+    Unity Ads: 0
   luminIcon:
     m_Name: 
     m_ModelFolderPath: 
@@ -671,10 +677,10 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 0
   windowsGamepadBackendHint: 0
-  cloudProjectId: 5efee26b-70ca-41e6-967f-c97d4f27b432
+  cloudProjectId: 587811b6-0d12-4cd9-8fcf-226418d0a14f
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: Flappy Bird
+  projectName: Revival
   organizationId: ilbugli
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
