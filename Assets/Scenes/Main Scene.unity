@@ -1704,26 +1704,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1165875807880530895, guid: eb2fb597426a84ac98ceb5ec11d3114e, type: 3}
-      propertyPath: m_Pitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1165875807880530895, guid: eb2fb597426a84ac98ceb5ec11d3114e, type: 3}
-      propertyPath: m_Volume
-      value: 0.75
-      objectReference: {fileID: 0}
-    - target: {fileID: 5439247373844658319, guid: eb2fb597426a84ac98ceb5ec11d3114e, type: 3}
-      propertyPath: flap
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 5439247373844658319, guid: eb2fb597426a84ac98ceb5ec11d3114e, type: 3}
       propertyPath: scoreText
       value: 
       objectReference: {fileID: 1630681192}
-    - target: {fileID: 5439247373844658319, guid: eb2fb597426a84ac98ceb5ec11d3114e, type: 3}
-      propertyPath: menuButton
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 5696958094521570040, guid: eb2fb597426a84ac98ceb5ec11d3114e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.09
