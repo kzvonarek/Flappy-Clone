@@ -3,4 +3,4 @@
 
 Done as of 6/25/24. First solo project.
 
-Assets from: [https://github.com/samuelcust/flappy-bird-assets/blob/master/sprites/redbird-upflap.png](url)
+Assets from: [https://github.com/samuelcust/flappy-bird-assets](url)
