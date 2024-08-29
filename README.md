@@ -1,6 +1,6 @@
 # Cwappy Clone
 "Cwappy Clone" a clone of Flappy Bird by Dong Nguyen.
 
-Done as of 6/25/24. Solo project.
+Complete as of 6/25/24. Solo project.
 
 Assets from: [https://github.com/samuelcust/flappy-bird-assets](url)
