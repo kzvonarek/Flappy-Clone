@@ -1,5 +1,5 @@
-# Cwappy Clone
-"Cwappy Clone" a clone of Flappy Bird by Dong Nguyen.
+# Klappy Clone
+"Klappy Clone" a clone of Flappy Bird by Dong Nguyen.
 
 Complete as of 6/25/24. Solo project.
 
